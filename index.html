@@ -8,19 +8,62 @@
     <title>Dolly's Game</title>
   </head>
   <body>
-    <h1>You need to help Dolly! Click on her to see how you can help!</h1>
+    <div id="topLineInstructions">
+      <h1>You need to help Dolly! Click on her to see how you can help!</h1>
+    </div>
     <img
       class="Dolly"
       src="images/Dolly.png"
       alt="Dolly Parton in a red sparkly outfit with her hands on her hips."
-      onclick="clickDolly(); getBubble();"
+      onclick="clickDolly();"
     />
     <img id="bubble" src="images/SpeechBubble.png" alt="A speech bubble." />
     <p id="speechBubbleText"></p>
-    <div class="instructions">
-      <p>Test</p>
-      <button>Start Game</button>
+    <div id="instructions">
+      <h2>Are you ready to help Dolly get her man back? Remember the rules:</h2>
+      <div class="instructionBox">
+        <div class="woman">
+          <img
+            class="floatingHeads"
+            src="images/Jolene.png"
+            alt="A woman with flaming locks of auburn hair, ivory skin and eyes of emerald green. She is shown from the shoulders up."
+          />
+          <p class="instructionP">Click Jolene – gain 1 point</p>
+        </div>
+        <div class="woman">
+          <img
+            class="floatingHeads"
+            src="images/Woman3.png"
+            alt="A woman with brown skin, long brown hair, and brown eyes. She is shown from the shoulders up."
+          />
+          <p class="instructionP">Click any other woman – lose 1 point</p>
+        </div>
+        <div class="woman">
+          <img
+            class="floatingHeads"
+            src="images/DollyClone.png"
+            alt="A woman with pale white skin, purpley-blue eyes and a blonde bob. She is shown from the shoulders up."
+          />
+          <p class="instructionP">
+            Click on Dolly's clone – lose all your points
+          </p>
+        </div>
+        <div id="startButtonBox" class="woman">
+          <button
+            id="startButton"
+            onclick="playSound(); hideInstructions(); startMovingDC(); startMovingJ(); startMovingW1(); startMovingW2(); startMovingW3(); startMovingW4();"
+          >
+            Start Game
+          </button>
+        </div>
+      </div>
     </div>
+    <img src="images/DollyClone.png" class="gameHeads" id="dollyCloneGame" />
+    <img src="images/Jolene.png" class="gameHeads" id="joleneGame" />
+    <img src="images/Woman1.png" class="gameHeads" id="woman1Game" />
+    <img src="images/Woman2.png" class="gameHeads" id="woman2Game" />
+    <img src="images/Woman3.png" class="gameHeads" id="woman3Game" />
+    <img src="images/Woman4.png" class="gameHeads" id="woman4Game" />
     <script src="index.js"></script>
   </body>
 </html>
