@@ -1,3 +1,6 @@
+//Shows text when Dolly is clicked
+const btn = document.getElementById("Dolly");
+btn.addEventListener('click', clickDolly);
 function clickDolly() {
     var x = document.getElementById("speechBubbleText");
     var container = document.getElementById("instructions");
@@ -18,12 +21,18 @@ function clickDolly() {
     }
   }
 
+  //starts sound when start game is clicked
+
   let playSound = () => new Audio("audio/Jolene.m4a").play()
+
+//hides instructions when game starts
 
 function hideInstructions() {
     var container = document.getElementById("instructions");
     container.style.display = "none";
   }
+
+  //starts the movement of all the floating heads
 
   function startMovingDC() {
     var image = document.getElementById("dollyCloneGame");
@@ -144,6 +153,43 @@ function hideInstructions() {
       clearInterval(interval);
     }, 160000); 
   }
+
+//points
+
+const totalCount = document.getElementById("totalCount");
+var count = 0;
+totalCount.innerHTML = count;
+
+const handleIncrement = () => {
+  count++;
+  totalCount.innerHTML = count;
+};
+
+const handleDecrement = () => {
+  count--;
+  totalCount.innerHTML = count;
+};
+
+const reset = () => {
+  if (count > 0) {
+    count = 0;
+    totalCount.innerHTML = count;
+  }
+};
+
+const incrementCount = document.getElementById("joleneGame");
+const decrementCount1 = document.getElementById("woman1Game");
+const decrementCount2 = document.getElementById("woman2Game");
+const decrementCount3 = document.getElementById("woman3Game");
+const decrementCount4 = document.getElementById("woman4Game");
+const resetCount = document.getElementById("dollyCloneGame");
+
+incrementCount.addEventListener("click", handleIncrement);
+decrementCount1.addEventListener("click", handleDecrement);
+decrementCount2.addEventListener("click", handleDecrement);
+decrementCount3.addEventListener("click", handleDecrement);
+decrementCount4.addEventListener("click", handleDecrement);
+resetCount.addEventListener("click", reset);
 
 
     // function getBubble(){
