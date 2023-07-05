@@ -3,7 +3,7 @@
 body{
     background-color: lavender;
     font-family: 'ABeeZee';
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .Dolly{
@@ -15,7 +15,7 @@ body{
 
 #bubble{
   display: none;
-  width: 1240px;
+  width: 1150px;
   height: 450px;
   position: absolute;
   left: 3%;
@@ -27,7 +27,7 @@ body{
   position: absolute;
   bottom: 45%;
   left: 12%;
-  padding-right: 20%;
+  padding-right: 25%;
 }
 
 .floatingHeads{
@@ -53,6 +53,8 @@ h2{
   flex-direction: row;
   text-align: center;
   align-items: center;
+  z-index: 3;
+  padding-left: 190px;
 }
 
 .woman{
@@ -89,13 +91,15 @@ h2{
   left: 300;
   top: 200;
   width: 7%;
-  transition: left 4.2s, top 4.2s;
+  transition: left 2.2s, top 2.2s;
   cursor: pointer;
+  /* display: none; */
+  z-index: 1;
 }
 
 #pointCounter{
   right: 7%;
-  top: 20%;
+  top: 22%;
   position: absolute;
   width: 150px;
   height: 150px;
@@ -132,11 +136,23 @@ h2{
 
 #pointCounterContents{
   position: absolute;
-  right: 8%;
-  top: 15%;
+  right: 7.69%;
+  top: 17%;
   font-size: 25px;
 }
+
 #totalCount{
 font-size: 60px;
 text-align: center;
+}
+
+#gameArea{
+  border-radius: 50px;
+  border-color: black;
+  border-style: solid;
+  background-color: aquamarine;
+  width: auto;
+  height: 40vw;
+  z-index: -99;
+  
 }
