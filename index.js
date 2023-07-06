@@ -22,13 +22,42 @@ function clickDolly() {
     }
   }
 
-  //starts sound when start game is clicked
+  //starts sound when start game is clicked and things appear when finished
 
-  let playSound = () => new Audio("audio/Jolene.m4a").play()
-  
-  Audio.onended = (event) => {
+  let playSound = () => {
+    let audio = new Audio("audio/Jolene.m4a");
     
-  }
+    audio.onended = () => {
+      var bubble = document.getElementById("bubble");
+      var image1 = document.getElementById("joleneGame");
+      var image2 = document.getElementById("dollyCloneGame");
+      var image3 = document.getElementById("woman1Game");
+      var image4 = document.getElementById("woman2Game");
+      var image5 = document.getElementById("woman3Game");
+      var image6 = document.getElementById("woman4Game");
+      var replayBtn = document.getElementById("replay");
+      var y = document.getElementById("totalCount")
+      var z = document.getElementById("speechBubbleTextEnd");
+      bubble.style.display = "block";
+      image1.style.display = "none";
+      image2.style.display = "none";
+      image3.style.display = "none";
+      image4.style.display = "none";
+      image5.style.display = "none";
+      image6.style.display = "none";
+      replayBtn.style.display = "block";
+
+      if (y.innerHTML > 0){
+        z.innerHTML = "You got my man back from Jolene! You really are a diamond in a rhinestone world! I will always love you!"
+      }else {
+        z.innerHTML = "Oh no! Jolene ran off with my man! Guess I'm on the lookout for a potential new boyfriend!"
+      }
+    };
+  
+    audio.play();
+  };
+  
+  
 
 //hides instructions when game starts
 
@@ -198,6 +227,14 @@ decrementCount4.addEventListener("click", handleDecrement);
 resetCount.addEventListener("click", reset);
 
 
+//replay button
 
+const replay = document.getElementById("replay");
+replay.addEventListener('click', reload);
+
+container.style.display = "block";
+function reload() {
+  document.location.reload()
+}
 
    
