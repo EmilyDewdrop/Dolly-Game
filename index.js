@@ -25,6 +25,10 @@ function clickDolly() {
   //starts sound when start game is clicked
 
   let playSound = () => new Audio("audio/Jolene.m4a").play()
+  
+  Audio.onended = (event) => {
+    
+  }
 
 //hides instructions when game starts
 
@@ -33,15 +37,7 @@ function hideInstructions() {
     container.style.display = "none";
   }
 
-  //display floating heads
-
-  // function displayHeads() {
-  //   var containers = document.getElementsByClassName("gameHeads");
-  // for (var i = 0; i < containers.length; i++) {
-  //   containers[i].style.display = "block";
-  // }
-  // }
-  //starts the movement of all the floating heads
+  //move heads
 
   function startMovingDC() {
     var image = document.getElementById("dollyCloneGame");
@@ -56,6 +52,7 @@ function hideInstructions() {
       
       image.style.left = randomX + "px";
       image.style.top = randomY + "px";
+      
     }
     
     setTimeout(function() {
@@ -201,12 +198,6 @@ decrementCount4.addEventListener("click", handleDecrement);
 resetCount.addEventListener("click", reset);
 
 
-    // function getBubble(){
-    //     const myBubble = document.getElementById("bubble");
-    //      { 
-    //        myBubble.style.display = "block"; 
-    //     }) 
-    // }
 
 
    
