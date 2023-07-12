@@ -1,3 +1,5 @@
+screen.orientation.lock("landscape");
+
 //Shows text when Dolly is clicked
 const btn = document.getElementById("Dolly");
 btn.addEventListener('click', clickDolly);
@@ -14,8 +16,8 @@ function clickDolly() {
     } else if (x.innerHTML === "Her beauty is beyond compare with flaming locks of auburn hair with ivory skin and eyes of emerald green!") {
       x.innerHTML = "I seem to flow right past her like an island in the stream, but I believe you can catch her! Each time you get her, you'll get 1 point! But make sure you don't accidentally catch anyone else or else you'll lose a point!";
     } else if (x.innerHTML === "I seem to flow right past her like an island in the stream, but I believe you can catch her! Each time you get her, you'll get 1 point! But make sure you don't accidentally catch anyone else or else you'll lose a point!") {
-      x.innerHTML = "And you REALLY don't want to catch my clone! Then you'll lose all your points!";
-    } else if (x.innerHTML === "And you REALLY don't want to catch my clone! Then you'll lose all your points!") {
+      x.innerHTML = "And you REALLY don't want to catch my clone! Then you'll lose all your points! And watch out, sometime you think you've caught Jolene and then... here she comes again!";
+    } else if (x.innerHTML === "And you REALLY don't want to catch my clone! Then you'll lose all your points! And watch out, sometime you think you've caught Jolene and then... here she comes again!") {
       x.innerHTML = " "
       bubble.style.display="none";
       container.style.display = "block";
@@ -189,6 +191,21 @@ function hideInstructions() {
     }, 160000); 
   }
 
+  //hide Jolene when clicked
+
+  const hideJ = document.getElementById("joleneGame");
+  hideJ.addEventListener('click', clickJolene);
+
+  function clickJolene(){
+  var Jolene = document.getElementById("joleneGame");
+  var timing = 5000;
+  Jolene.style.display="none";
+  setTimeout(function() {
+    Jolene.style.display = "block";
+  }, timing);
+
+}
+
 //points
 
 const totalCount = document.getElementById("totalCount");
@@ -227,7 +244,7 @@ decrementCount4.addEventListener("click", handleDecrement);
 resetCount.addEventListener("click", reset);
 
 
-//replay button
+// replay button
 
 const replay = document.getElementById("replay");
 replay.addEventListener('click', reload);
@@ -236,5 +253,13 @@ container.style.display = "block";
 function reload() {
   document.location.reload()
 }
+
+// const replay = document.getElementById("replay");
+// replay.addEventListener('click', instructionsAgain);
+
+
+// function instructionsAgain() {
+//   container.style.display = "block";
+// }
 
    
