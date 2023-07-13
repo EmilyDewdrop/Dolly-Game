@@ -94,7 +94,7 @@ h2{
   position: absolute;
   top: 19%;
   right: 7%;
-  width: 8%;
+  width: 7%;
   transition: left 2.2s, top 2.2s;
   cursor: pointer;
   z-index: 1;
