@@ -183,7 +183,7 @@ text-align: center;
   background-color: #FD0487;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1450px){
   #bubble{
     width: 1200px;
     height: 350px;
@@ -195,7 +195,7 @@ text-align: center;
   .insideBubble{
     font-size: 1.75rem;
     position: absolute;
-    bottom: 37%;
+    bottom: 39%;
     left: 24%;
     padding-right: 25%;
   }
