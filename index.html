@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Dolly's Game</title>
-    <link rel="icon" type="image/x-icon" href="/images/DollyClone.png" />
+    <link rel="icon" type="image/x-icon" href="/images/DollyClone.png?" />
   </head>
   <body>
     <div class="fullContainer">
@@ -57,6 +57,10 @@
               </p>
             </div>
             <div id="startButtonBox" class="woman">
+              <p id="pointsInstructions">
+                You need to have five points at the end of the song to save
+                Dolly's man!
+              </p>
               <button
                 id="startButton"
                 onclick="playSound(); hideInstructions(); startMovingDC(); startMovingJ(); startMovingW1(); startMovingW2(); startMovingW3(); startMovingW4(); displayHeads();"

@@ -49,7 +49,7 @@ function clickDolly() {
       image6.style.display = "none";
       replayBtn.style.display = "block";
 
-      if (y.innerHTML > 0){
+      if (y.innerHTML >= 5){
         z.innerHTML = "You got my man back from Jolene! You really are a diamond in a rhinestone world! I will always love you!"
       }else {
         z.innerHTML = "Oh no! Jolene ran off with my man! Guess I'm on the lookout for a potential new boyfriend!"
@@ -205,6 +205,21 @@ function hideInstructions() {
   }, timing);
 
 }
+
+//speed up when clicked
+
+let speedJolene = document.getElementById("joleneGame");
+let transitionDuration = 2.5;
+
+speedJolene.addEventListener('click', speedUpJolene);
+
+function speedUpJolene() {
+  transitionDuration -= 0.3; 
+  document.getElementById("joleneGame").style.transition = `left ${transitionDuration}s, top ${transitionDuration}s`;
+}
+
+
+
 
 //points
 

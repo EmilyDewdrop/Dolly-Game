@@ -81,7 +81,7 @@ h2{
   background-color: #9032BC;
   color: lightgrey;
   padding: 5%;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 2rem;
   border-radius: 15px;
   font-family: sans-serif;
@@ -95,12 +95,17 @@ h2{
   background-color: #FD0487;
 }
 
+#pointsInstructions{
+  font-weight: bolder;
+  font-size: large;
+}
+
 .gameHeads{
   position: absolute;
   top: 19%;
   right: 7%;
   width: 7%;
-  transition: left 2.2s, top 2.2s;
+  transition: left 2.5s, top 2.5s;
   cursor: pointer;
   z-index: 1;
 }
