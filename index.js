@@ -1,3 +1,5 @@
+
+
 //Shows text when Dolly is clicked
 const btn = document.getElementById("Dolly");
 btn.addEventListener('click', clickDolly);

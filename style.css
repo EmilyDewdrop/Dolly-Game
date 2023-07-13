@@ -3,7 +3,12 @@
 body{
     background-color: lavender;
     font-family: 'ABeeZee';
-    overflow: hidden;
+    height: 100%;
+}
+
+.fullContainer{
+  height: 100%;
+  overflow: hidden;
 }
 
 .Dolly{

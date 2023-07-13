@@ -9,101 +9,103 @@
     <link rel="icon" type="image/x-icon" href="/images/DollyClone.png" />
   </head>
   <body>
-    <div id="topLineInstructions">
-      <h1>You need to help Dolly! Click on her to see how you can help!</h1>
-    </div>
-    <img
-      class="Dolly"
-      id="Dolly"
-      src="images/Dolly.png"
-      alt="Dolly Parton in a red sparkly outfit with her hands on her hips."
-    />
-    <div id="pointCounter"></div>
-    <div id="pointCounterContents">
-      <p>Total Score</p>
-      <div id="totalCount"></div>
-    </div>
-    <img id="bubble" src="images/SpeechBubble.png" alt="A speech bubble." />
-    <p class="insideBubble" id="speechBubbleText"></p>
-    <p class="insideBubble" id="speechBubbleTextEnd"></p>
-    <div id="gameArea">
-      <div id="instructions">
-        <div class="instructionBox">
-          <div class="woman">
-            <img
-              class="floatingHeads"
-              src="images/Jolene.png"
-              alt="A woman with flaming locks of auburn hair, ivory skin and eyes of emerald green. She is shown from the shoulders up."
-            />
-            <p class="instructionP">Click Jolene – gain 1 point</p>
-          </div>
-          <div class="woman">
-            <img
-              class="floatingHeads"
-              src="images/Woman3.png"
-              alt="A woman with brown skin, long brown hair, and brown eyes. She is shown from the shoulders up."
-            />
-            <p class="instructionP">Click any other woman – lose 1 point</p>
-          </div>
-          <div class="woman">
-            <img
-              class="floatingHeads"
-              src="images/DollyClone.png"
-              alt="A woman with pale white skin, purpley-blue eyes and a blonde bob. She is shown from the shoulders up."
-            />
-            <p class="instructionP">
-              Click on Dolly's clone – lose all your points
-            </p>
-          </div>
-          <div id="startButtonBox" class="woman">
-            <button
-              id="startButton"
-              onclick="playSound(); hideInstructions(); startMovingDC(); startMovingJ(); startMovingW1(); startMovingW2(); startMovingW3(); startMovingW4(); displayHeads();"
-            >
-              Start Game
-            </button>
+    <div class="fullContainer">
+      <div id="topLineInstructions">
+        <h1>You need to help Dolly! Click on her to see how you can help!</h1>
+      </div>
+      <img
+        class="Dolly"
+        id="Dolly"
+        src="images/Dolly.png"
+        alt="Dolly Parton in a red sparkly outfit with her hands on her hips."
+      />
+      <div id="pointCounter"></div>
+      <div id="pointCounterContents">
+        <p>Total Score</p>
+        <div id="totalCount"></div>
+      </div>
+      <img id="bubble" src="images/SpeechBubble.png" alt="A speech bubble." />
+      <p class="insideBubble" id="speechBubbleText"></p>
+      <p class="insideBubble" id="speechBubbleTextEnd"></p>
+      <div id="gameArea">
+        <div id="instructions">
+          <div class="instructionBox">
+            <div class="woman">
+              <img
+                class="floatingHeads"
+                src="images/Jolene.png"
+                alt="A woman with flaming locks of auburn hair, ivory skin and eyes of emerald green. She is shown from the shoulders up."
+              />
+              <p class="instructionP">Click Jolene – gain 1 point</p>
+            </div>
+            <div class="woman">
+              <img
+                class="floatingHeads"
+                src="images/Woman3.png"
+                alt="A woman with brown skin, long brown hair, and brown eyes. She is shown from the shoulders up."
+              />
+              <p class="instructionP">Click any other woman – lose 1 point</p>
+            </div>
+            <div class="woman">
+              <img
+                class="floatingHeads"
+                src="images/DollyClone.png"
+                alt="A woman with pale white skin, purpley-blue eyes and a blonde bob. She is shown from the shoulders up."
+              />
+              <p class="instructionP">
+                Click on Dolly's clone – lose all your points
+              </p>
+            </div>
+            <div id="startButtonBox" class="woman">
+              <button
+                id="startButton"
+                onclick="playSound(); hideInstructions(); startMovingDC(); startMovingJ(); startMovingW1(); startMovingW2(); startMovingW3(); startMovingW4(); displayHeads();"
+              >
+                Start Game
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <img
-        src="images/DollyClone.png"
-        class="gameHeads"
-        id="dollyCloneGame"
-        alt="A woman with pale white skin, purpley-blue eyes and a blonde bob. She is shown from the shoulders up."
-      />
-      <img
-        src="images/Jolene.png"
-        class="gameHeads"
-        id="joleneGame"
-        alt="A woman with flaming locks of auburn hair, ivory skin and eyes of emerald green. She is shown from the shoulders up."
-      />
-      <img
-        src="images/Woman1.png"
-        class="gameHeads"
-        id="woman1Game"
-        alt="A woman with pale white skin, auburn hair, and purple eyes. She is shown from the shoulders up."
-      />
-      <img
-        src="images/Woman2.png"
-        class="gameHeads"
-        id="woman2Game"
-        alt="A woman with dark brown skin, long black hair pulled back, and brown eyes. She is shown from the shoulders up."
-      />
-      <img
-        src="images/Woman3.png"
-        class="gameHeads"
-        id="woman3Game"
-        alt="A woman with light brown skin, long, straight chesnut hair, and brown eyes. She is shown from the shoulders up."
-      />
-      <img
-        src="images/Woman4.png"
-        class="gameHeads"
-        id="woman4Game"
-        alt="A woman with white skin, bright red hair in a bob, and green eyes. She is shown from the shoulders up."
-      />
-      <button id="replay">Play again</button>
-      <script src="index.js"></script>
+        <img
+          src="images/DollyClone.png"
+          class="gameHeads"
+          id="dollyCloneGame"
+          alt="A woman with pale white skin, purpley-blue eyes and a blonde bob. She is shown from the shoulders up."
+        />
+        <img
+          src="images/Jolene.png"
+          class="gameHeads"
+          id="joleneGame"
+          alt="A woman with flaming locks of auburn hair, ivory skin and eyes of emerald green. She is shown from the shoulders up."
+        />
+        <img
+          src="images/Woman1.png"
+          class="gameHeads"
+          id="woman1Game"
+          alt="A woman with pale white skin, auburn hair, and purple eyes. She is shown from the shoulders up."
+        />
+        <img
+          src="images/Woman2.png"
+          class="gameHeads"
+          id="woman2Game"
+          alt="A woman with dark brown skin, long black hair pulled back, and brown eyes. She is shown from the shoulders up."
+        />
+        <img
+          src="images/Woman3.png"
+          class="gameHeads"
+          id="woman3Game"
+          alt="A woman with light brown skin, long, straight chesnut hair, and brown eyes. She is shown from the shoulders up."
+        />
+        <img
+          src="images/Woman4.png"
+          class="gameHeads"
+          id="woman4Game"
+          alt="A woman with white skin, bright red hair in a bob, and green eyes. She is shown from the shoulders up."
+        />
+        <button id="replay">Play again</button>
+        <script src="index.js"></script>
+      </div>
     </div>
   </body>
 </html>
