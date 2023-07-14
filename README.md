@@ -22,6 +22,7 @@ I overcame a number of hurdles when creating this game. Those included:
 - spacing with the speech bubble and text in it. I have used media queries so that on most screens the text sits right in the middle of the speech bubble. However, it's not quite as nice as I would like and I'm sure there is a way to make this more adaptive that I have not yet figured out.
 - spacing of the instructions. I had a lot of difficulty, despite coding it in a very similar way to that of my gallery on my website, getting the instructions to centre on the page. I eventually, after much inspection and trial and error, used padding on the left, though am sure there is a better way to do this that I have yet to learn.
 - my biggest bug on this was in having the floating heads appear on 'start game'. I initially had the heads on display:none and then created a function which would change that to display:block. However, when I ran this function, all the heads would appear and then float to the top of the screen and never come back. I couldn't understand this as I'd changed nothing else about the code, and despite several suggestions at the support circle, I couldn't find a solution. I got around this by hiding the heads under the giant heart. It's not the most elegant solution and took a lot of adjustments for different screen widths, but it works and also gives a more interesting entrance than having them on display:none initially would have
+- the favicon won't show up on github pages – I've made several attempts to fix this but none have been successful 
 
 ### Reflections
 
