@@ -35,6 +35,14 @@ body{
   padding-right: 25%;
 }
 
+#clickAgain{
+  position: fixed;
+  bottom: 8%;
+  left: 18%;
+  font-size: 2rem;
+  display: none;
+}
+
 .floatingHeads{
   padding: 1rem;
   width: 27%;
