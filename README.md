@@ -10,8 +10,9 @@ This game is based on one I created last year on Scratch, with similar design el
 - a counter which displays the current score and increments if Jolene is clicked, decrements if other women are clicked, and resets to 0 if Dolly's clone is clicked and the current score is positive
 - a CSS heart-shaped encasing for the counter
 - a function that makes Jolene disappear and then reappear five seconds later when she has been clicked
+- a function that speeds up Jolene's movement every time she is clicked
 - a function that hides the floating heads at the end of the song
-- two different messages that appear at the end (one if the player's score is > 0, or in it is <= 0
+- two different messages that appear at the end (one if the player's score is >= 5, or in it is < 5)
 - a button at the end to replay the game
 
 ### Debugging
@@ -27,7 +28,7 @@ I overcame a number of hurdles when creating this game. Those included:
 I had a lot of fun making this game and am very proud of it, but with more time and coding experience I would have liked to include the following:
 
 - mobile adaptation – I did look at doing this, but I started to realise quite quickly that this would require a lot more than adjusting the screen size and the game would be quite difficult to play on very small screens. I think doing this properly would require more thought.
-- more interesting events with the floating heads – with more time, I would like to add in some additional features. Maybe the number of floating heads double every 30 seconds to make it harder, you have to click Jolene every 30 seconds or you lose all your points, changes of speed of movement, etc. I think there could be a lot of ways to make the game more interesting with more time/experience
+- more interesting events with the floating heads – with more time, I would like to add in some additional features. Maybe the number of floating heads double every 30 seconds to make it harder, you have to click Jolene every 30 seconds or you lose all your points, changes of speed of movement for all the heads, etc. I think there could be a lot of ways to make the game more interesting with more time/experience
 - having the Play Again button reload from the instructions, as at the moment you have to click Dolly and go through all the text in the bubble again. I did make a couple attempts at this, but I couldn't get them to work properly and realised it would also require resetting the counter which felt lower priority than improving some other elements of the game
 
 I learned a lot of new skills in creating this, and hope you enjoy playing it!
